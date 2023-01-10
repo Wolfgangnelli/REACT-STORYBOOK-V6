@@ -1,11 +1,17 @@
 # Storybook
 
 A development environment and playgrond for UI components
+
 Create components independently
+
 Showcase those components interactively in an isolated development environment
+
 Ability to view the different components that have already been developed
+
 View what are the different props that those developed components accept
+
 Ability to visually showcase those components to your stake holders for feedback
+
 Dynamically change props, accessibility score
 
 # Getting Started with Create React App
