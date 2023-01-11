@@ -1,3 +1,8 @@
+import React from "react";
+import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/react";
+
+// configuration file for the stories
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -14,4 +19,13 @@ export const parameters = {
   },
 };
 
-// configuration file for the stories
+export const decorators = [
+  (Story) => (
+    <ThemeProvider theme={theme}>
+      <CSSReset />
+      <Box m="4">
+        <Story />
+      </Box>
+    </ThemeProvider>
+  ),
+];
